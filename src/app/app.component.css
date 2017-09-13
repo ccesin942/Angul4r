@@ -1,0 +1,26 @@
+
+h1{
+  width: 50%;
+  margin: 50px auto 0px;
+  background-color: #dd0031;
+  box-shadow: 0 0 7px 0 rgba(0,0,0,1);
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.imgS{
+    filter: drop-shadow(2px 2px 0 rgba(2, 3, 1, 0.7));
+    margin-top: 120px;
+}
+
+.imgS:hover{
+    -webkit-transform: scale(2.3) rotateZ(-720deg);
+    -moz-transform:    scale(2.3) rotateZ(-720deg);
+    -o-transform:      scale(2.3) rotateZ(-720deg);
+    -ms-transform:     scale(2.3) rotateZ(-720deg);
+    transform:         scale(2.3) rotateZ(-720deg);
+}
+
+.shdw{
+  filter: drop-shadow(15px 15px 7px rgba(2, 3, 1, 0.3));
+}

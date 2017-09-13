@@ -1,0 +1,36 @@
+<div id="container_EmpleadosComponent">
+
+  <hr>
+  <div id='emplados_header'>
+    <h1 (click)="createArray()">
+      {{title}} works.!!..
+    </h1>
+  </div>
+  <br>
+
+  <div [ngSwitch]="show_worker">
+    <div *ngSwitchCase="true">
+      <h3>Listado Emplados</h3>
+      <ul id='empleados_content'>
+          <li id="emp_container" *ngFor="let emp of emp_array">
+            Empleado:
+            <ul id="worker_display" >
+              <li>{{emp.name  }}</li>
+              <li>{{emp.age   }}</li>
+              <li>{{emp.charge}}</li>
+              <li *ngIf="emp.hired == true"  [ngStyle]="{color:'green'}">  CONTRATADO   </li>
+              <li *ngIf="emp.hired == false" [ngStyle]="{color:'red'}"> NO CONTRATADO </li>
+            </ul>
+            <script>console.log("nombre: " + empleado.name);</script>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+  <div id='empleados_end'>
+    <p>Componente: {{title}}</p>
+  </div>
+  <hr>
+
+</div>
